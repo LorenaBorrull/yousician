@@ -10,7 +10,7 @@ export default function navigate () {
 
             <div>
                <div className="instruments">Instruments</div>
-               <div className="dropinstru">
+               <Dropdown>
                 <ul>
                     <li>Guitar</li>
                     <li>Bass</li>
