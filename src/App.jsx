@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import "./App.css";
 
+=======
+import { useState } from 'react'
+import nav from './components/nav'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+>>>>>>> 0dd61649c2fdcf33405fb3f871a55793e54fbd47
 
 function App() {
   const [count, setCount] = useState(0);
