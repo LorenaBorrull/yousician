@@ -1,42 +1,124 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.App {
+  padding: 50px;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.video-inicial {
+  grid: auto/1fr;
+  grid-auto-rows: min-content;
+  height: calc((100 * var(--vh)) - 32px);
+  min-height: initial;
+  max-height: 500px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.green-box {
+  background-color: rgba(0,210,150,.65);
+  padding: 50px;
+  background-clip: text;
+  color: transparent;
+  color:black
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.green-box h1 {
+  background-color: transparent;
+
 }
 
-.card {
-  padding: 2em;
+.green-box h2 {
+  background-color: transparent;
+
 }
 
-.read-the-docs {
-  color: #888;
+.my-button {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 20px;
+  color: black;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.my-button:hover {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  list-style: none; 
+  padding: 50px;
+}
+
+.options a {
+  margin-right: 20px;
+}
+
+
+.mini-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.mini-box img {
+  width: 100%;
+  object-fit: cover;
+
+}
+
+.box-2 img {
+  width: 50%;
+  object-fit: cover;
+}
+
+
+.box-3 {
+  background-color: rgba(25, 24, 24, 0.65);
+  padding: 50px;
+  background-clip: text;
+  color: transparent;
+  color:black
+}
+
+.box-3 p {
+  background-color: transparent;
+  color: white;
+
+}
+
+.box-3 h4 {
+  background-color: transparent;
+  color: white;
+}
+
+.box-3 h2 {
+  background-color: transparent;
+  color: white;
+}
+
+
+.box-3 img {
+  width: 50%;
+  object-fit: cover;
+}
+
+.my-button2 {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+.my-button2:hover {
+  background-color: black;
+  color: white;
+  border-radius: 50px;
 }
