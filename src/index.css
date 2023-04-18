@@ -1,20 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
 * {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  background-color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
-/* -----------------------------------------------------------------NAVBAR----------------------------------------------------------------------------------------- */
-
-nav {
-  background-color: black;
-  color: white;
-}
-
-/* -----------------------------------------------------------------DROPDOWN--------------------------------------------------------------------------------------- */
-
-dropdown {
-  background-color: black;
+.navbar {
+  background-color: #000000;
+  padding: 20px 0;
+  font-size: 16px;
   
 }
+
+.imglogo{
+  height: 40px;
+}
+
+
+.nav-link {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.nav-dropdown {
+  padding: 0 10px;
+
+}
+.nav-dropdown-item {
+  font-weight: 700;
+  padding: 10px;
+}
+
+.sign-up {
+  background-color: #f8e11c;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 0%;
+
+}
+
+
+
+
