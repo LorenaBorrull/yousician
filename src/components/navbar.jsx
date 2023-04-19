@@ -1,8 +1,7 @@
 import React from "react";
 import Logo from "../assets/logo.svg";
-import { UilUserCircle } from "@iconscout/react-unicons";
-import { UilGlobe } from "@iconscout/react-unicons";
-import "../index.css";
+import { UilUserCircle,UilGlobe   } from "@iconscout/react-unicons";
+import "../App.css";
 
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
