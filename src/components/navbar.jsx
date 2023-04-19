@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/logo.svg";
 import { UilUserCircle } from "@iconscout/react-unicons";
+import { UilGlobe } from "@iconscout/react-unicons";
 import "../index.css";
 
 import Navbar from "react-bootstrap/Navbar";
@@ -15,23 +16,7 @@ function MyNavbar() {
         <img src={Logo} alt="Logo" className="imglogo" />
       </Navbar.Brand>
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <NavDropdown
-            title="Instruments"
-            id="basic-nav-dropdown"
-            className="nav-dropdown"
-          >
-            <NavDropdown.Item href="#action/3.1" className="nav-dropdown-item">
-              Guitar
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2" className="nav-dropdown-item">
-              Bass
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3" className="nav-dropdown-item">
-              Ukulele
-            </NavDropdown.Item>
-          </NavDropdown>
-
+        <Nav>
           <NavDropdown
             title="Instruments"
             id="basic-nav-dropdown"
@@ -59,13 +44,22 @@ function MyNavbar() {
             id="basic-nav-dropdown"
             className="nav-dropdown"
           >
-            <NavDropdown.Item href="/artist-courses/metallica" className="nav-dropdown-item">
+            <NavDropdown.Item
+              href="/artist-courses/metallica"
+              className="nav-dropdown-item"
+            >
               Metallica
             </NavDropdown.Item>
-            <NavDropdown.Item href="/artist-courses/jasonmraz" className="nav-dropdown-item">
+            <NavDropdown.Item
+              href="/artist-courses/jasonmraz"
+              className="nav-dropdown-item"
+            >
               Jason Mraz
             </NavDropdown.Item>
-            <NavDropdown.Item href="/artist-courses/juanes" className="nav-dropdown-item">
+            <NavDropdown.Item
+              href="/artist-courses/juanes"
+              className="nav-dropdown-item"
+            >
               Juanes
             </NavDropdown.Item>
           </NavDropdown>
@@ -74,33 +68,39 @@ function MyNavbar() {
             Blog
           </Nav.Link>
           <Nav.Link href="/familyplan" className="nav-link">
-          Family Plan
+            Family Plan
           </Nav.Link>
 
           <Nav.Link href="/help" className="nav-link">
-          Help
+            Help
           </Nav.Link>
 
-          <NavDropdown
-            title="Languages"
-            id="basic-nav-dropdown"
-            className="nav-dropdown"
-          >
-            <NavDropdown.Item href="/artist-courses/metallica" className="nav-dropdown-item">
-            English
+          <UilGlobe className='icon'/>
+          <NavDropdown id="basic-nav-dropdown" className="nav-dropdown">
+            <NavDropdown.Item
+              href="/artist-courses/metallica"
+              className="nav-dropdown-item"
+            >
+              English
             </NavDropdown.Item>
-            <NavDropdown.Item href="/artist-courses/jasonmraz" className="nav-dropdown-item">
+            <NavDropdown.Item
+              href="/artist-courses/jasonmraz"
+              className="nav-dropdown-item"
+            >
               Català
             </NavDropdown.Item>
-            <NavDropdown.Item href="/artist-courses/juanes" className="nav-dropdown-item">
+            <NavDropdown.Item
+              href="/artist-courses/juanes"
+              className="nav-dropdown-item"
+            >
               Español
             </NavDropdown.Item>
           </NavDropdown>
 
           <Nav.Link href="#profile" className="nav-link-profile">
-            <UilUserCircle className='profile' />
+            <UilUserCircle />
           </Nav.Link>
-          <Button>Try premium</Button>
+          <Button id="button-premium">Try premium</Button>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

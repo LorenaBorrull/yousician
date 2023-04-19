@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Nav1 from "./components/navbar";
+import Nav from "./components/navbar";
 // import "./App.css";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav1 />
+      <Nav />
       <video
         className="video-inicial"
         playsinline=""

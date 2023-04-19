@@ -2,8 +2,8 @@ const GuitarPage=()=> {
   return (
     <div className={guitar}>
               <Nav />       {" "}
-      <div>
-                    <img src={guitar} />           {" "}
+      <div className="container-guitar">
+                    <img src='https://assets.yousician.com/app/uploads/2021/02/19150932/hero-guitar-2048x1081.png.webp' />           {" "}
         <div>PRACTICE AT HOME WITH YOUSICIAN</div>
                     <br />           {" "}
         <div>Learn guitar with interactive lessons</div>
