@@ -151,16 +151,21 @@
   text-decoration: none;
 }
 
-.nav-dropdown {
+.dropdown-instruments{
   padding: 0 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 
 }
 .nav-dropdown-item {
   font-weight: 700;
   padding: 10px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .nav-link-profile{

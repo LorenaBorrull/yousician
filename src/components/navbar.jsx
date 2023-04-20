@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../assets/logo.svg";
-import { UilUserCircle,UilGlobe   } from "@iconscout/react-unicons";
+import { UilUserCircle, UilGlobe } from "@iconscout/react-unicons";
 import "../App.css";
 
 import Navbar from "react-bootstrap/Navbar";
@@ -10,15 +10,14 @@ import { Button } from "react-bootstrap";
 
 function MyNavbar() {
   return (
-    <Navbar expand="lg" className="navbar">
+    <Navbar className="navbar">
       <Navbar.Brand href="#home">
         <img src={Logo} alt="Logo" className="imglogo" />
       </Navbar.Brand>
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav>
+      <Navbar.Collapse id="nav">
+        <Nav >
           <NavDropdown
             title="Instruments"
-            id="basic-nav-dropdown"
             className="nav-dropdown"
           >
             <NavDropdown.Item href="#action/3.1" className="nav-dropdown-item">
@@ -40,7 +39,6 @@ function MyNavbar() {
 
           <NavDropdown
             title="Artist Courses"
-            id="basic-nav-dropdown"
             className="nav-dropdown"
           >
             <NavDropdown.Item
@@ -74,10 +72,10 @@ function MyNavbar() {
             Help
           </Nav.Link>
 
-          <UilGlobe className='icon'/>
+          <UilGlobe className="icon" />
           <NavDropdown id="basic-nav-dropdown" className="nav-dropdown">
             <NavDropdown.Item
-              href="/artist-courses/metallica"
+              href="/homepage"
               className="nav-dropdown-item"
             >
               English
